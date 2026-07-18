@@ -5,7 +5,7 @@ import chapters from "../data/chapters";
 
 export default function Chapters() {
   return (
-      <section className="min-h-screen px-6 pt-28 pb-20">
+      <section className="min-h-screen px-6 pt-24 pb-32">
         <div className="mx-auto max-w-5xl">
 
             <p className="text-sm font-semibold uppercase tracking-[6px] text-pink-400">

@@ -17,7 +17,7 @@ export default function Letter({ text }) {
         duration: 0.9,
         ease: "easeOut",
       }}
-      className="prose prose-lg max-w-none whitespace-pre-line leading-9 text-gray-700"
+      className="prose prose-sm md:prose-base max-w-none whitespace-pre-line leading-8 text-[15px] text-gray-700"
     >
       {text}
     </motion.div>

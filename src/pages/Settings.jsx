@@ -1,6 +1,6 @@
 export default function Settings() {
   return (
-    <section className="min-h-screen px-6 pt-24 pb-20">
+    <section className="min-h-screen px-6 pt-24 pb-32">
       <div className="mx-auto max-w-4xl">
 
         {/* Header */}

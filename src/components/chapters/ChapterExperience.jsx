@@ -49,8 +49,7 @@ export default function ChapterExperience({ chapter }) {
 
   return (
     
-       <div className="mx-auto flex min-h-screen w-full items-center justify-center bg-gradient-to-b from-[#fdf9f6] to-[#efe5da] px-6 py-16">
-      {() => openLetter()}
+       <div className="min-h-[70vh] md:min-h-screen flex flex-col items-center justify-center">
     
 
 
@@ -82,26 +81,26 @@ export default function ChapterExperience({ chapter }) {
                 }}
             exit={{ opacity: 0 }}
             transition={{ duration: .8 }}
-            className="mx-auto w-full max-w-3xl rounded-[36px] border border-[#efe3d3] bg-[#fffaf3] p-12 shadow-2xl"
+            className="mx-auto w-full max-w-xl rounded-[28px] border border-[#efe3d3] bg-[#fffaf3] p-6 shadow-xl md:max-w-3xl md:rounded-[36px] md:p-10"
           >
 
             <p className="text-sm uppercase tracking-[6px] text-pink-400">
               Chapter {chapter.id}
             </p>
 
-            <h1 className="mt-4 text-5xl font-bold leading-tight tracking-[-0.04em] text-[#2c2c2c]">
+            <h1 className="mt-3 text-3xl font-bold leading-tight tracking-[-0.03em] text-[#2c2c2c] md:text-5xl">
               {chapter.title}
             </h1>
 
-            <div className="mt-4 flex gap-3 text-gray-500">
+            <div className="mt-3 flex flex-wrap gap-2 text-sm text-gray-500">
               <span>{chapter.date}</span>
               <span>•</span>
               <span>{chapter.readingTime}</span>
             </div>
 
-            <hr className="my-8" />
+            <hr className="my-5" />
 
-            <div className="mt-10 text-[18px] leading-[2.1] text-[#4a4a4a]">
+            <div className="mt-6 text-[15px] leading-8 text-[#4a4a4a] md:text-[17px]">
   <Letter text={chapter.letter} />
 </div>
 

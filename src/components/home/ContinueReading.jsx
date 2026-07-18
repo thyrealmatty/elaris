@@ -34,9 +34,13 @@ export default function ContinueReading() {
         Continue Reading
       </p>
 
-      <h2 className="mt-4 text-3xl font-bold text-[#2C2C2C]">
-        💌 {reading.title}
-      </h2>
+                <p className="mt-5 text-xs font-semibold uppercase tracking-[4px] text-pink-500">
+            Chapter {reading.id}
+          </p>
+
+          <h2 className="mt-2 text-2xl font-bold text-[#2C2C2C] md:text-3xl">
+            {reading.title}
+          </h2>
 
       <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-gray-500">
         <span>{reading.date}</span>
@@ -44,16 +48,24 @@ export default function ContinueReading() {
         <span>{reading.readingTime}</span>
       </div>
 
-      <p className="mt-5 text-[15px] font-medium text-gray-500">
+      <p className="mt-5 text-sm text-gray-500">
         {reading.progress >= 100
-          ? "Completed ❤️"
-          : `You stopped ${reading.progress}% through this chapter.`}
+          ? "You've finished this chapter! ❤️"
+          : `${reading.progress}% `}
       </p>
       <p className="mt-5 text-sm font-medium text-pink-500">
   Tap anywhere to continue →
 </p>
+          <div className="mt-6 flex items-center justify-between text-sm">
+            <span className="text-gray-400">
+              Resume where you left off
+            </span>
 
-      <div className="mt-6 h-2 overflow-hidden rounded-full bg-pink-100">
+            <span className="font-semibold text-pink-500">
+              Continue →
+            </span>
+          </div>
+      <div className="mt-6 h-3 overflow-hidden rounded-full bg-pink-100">
         <div
           className="h-full rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500 transition-all duration-500"
           style={{

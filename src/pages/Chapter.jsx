@@ -92,8 +92,8 @@ export default function Chapter() {
         </Link>
       </motion.div>
 
-      <section className="min-h-screen px-6 pb-20 pt-16">
-        <div className="mx-auto max-w-4xl">
+      <section className="min-h-screen px-6 pb-32 pt-24">
+        <div className="mx-auto max-w-2xl">
           <ChapterExperience chapter={chapter} />
         </div>
         <MemoryThreads chapter={chapter} />

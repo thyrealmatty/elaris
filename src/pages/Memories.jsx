@@ -6,7 +6,7 @@ import memories from "../data/memories";
 export default function Memories() {
   
   return (
-      <section className="min-h-screen px-4 pt-24 pb-20 sm:px-6">
+      <section className="min-h-screen px-6 pt-24 pb-32 sm:px-6">
 
         <div className="mx-auto max-w-4xl">
 

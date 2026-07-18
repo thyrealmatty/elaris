@@ -23,15 +23,28 @@ export default function Home() {
   const latestMemory = memories[memories.length - 1];
 
   return (
-      <section className="min-h-screen pt-32 pb-20 px-6">
+      <section className="min-h-screen">
 
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-6xl">
 
           <Hero />
           <ContinueReading />
           <SpecialMomentCard moment={specialMoment} />
+          <div className="mt-12 mb-6">
+              <p className="text-sm font-semibold uppercase tracking-[4px] text-pink-400">
+                Explore Your World
+              </p>
 
-          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+              <h2 className="mt-2 text-3xl font-bold text-[#2C2C2C]">
+                Everything you've created together.
+              </h2>
+
+              <p className="mt-2 text-gray-500">
+                Letters, memories, music and milestones—all in one place.
+              </p>
+            </div>
+
+          <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-2">
 
            <DashboardCard
   icon={<FiBookOpen />}
@@ -60,9 +73,14 @@ export default function Home() {
               subtitle="Relive every milestone we've shared."
               to="/journey"
             />
-                <QuoteCard quote={thought.text} author={thought.author} />
+                
           </div>
-
+            <div className="mt-8">
+              <QuoteCard 
+                  quote={thought.text} 
+                  author={thought.author} 
+              />
+            </div>
         </div>
 
       </section>
