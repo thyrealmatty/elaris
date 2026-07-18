@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #FFFDFB;
+  color: #2C2C2C;
+}
+::selection{
+    background:#E87AA4;
+    color:white;
+}
+
+body{
+    overflow-x:hidden;
+}
+body::before{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:#ffd6e5;
+    filter:blur(180px);
+    border-radius:50%;
+    top:-200px;
+    right:-150px;
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#e7dcff;
+    filter:blur(180px);
+    border-radius:50%;
+    bottom:-150px;
+    left:-150px;
+    z-index:-1;
+}
+button{
+    cursor:pointer;
+}
+
+button:active{
+    transform:scale(.97);
+}
+
+.card{
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
