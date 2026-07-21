@@ -4,7 +4,8 @@ const journey = [
     date: "3 July 2026",
     title: "The Beginning",
     description: "The day our story officially began.",
-    icon: "/images/the-beginning.jpg",
+    icon: "🌸",
+    image: "/images/the-beginning.jpg",
     chapterId: 1,
   },
 
@@ -13,7 +14,8 @@ const journey = [
     date: "5 July 2026",
     title: "Our First Kiss",
     description: "A moment we'll always remember.",
-    icon: "/images/kiss.jpg",
+    icon: "💋",
+    image: "/images/kiss.jpg",
     chapterId: 1,
   },
 
@@ -22,7 +24,8 @@ const journey = [
     date: "6 July 2026",
     title: "Our First Date",
     description: "The first page of many adventures.",
-    icon: "/images/first-date.jpg",
+    icon: "🌹",
+    image: "/images/first-date.jpg",
     chapterId: 1,
   },
 
@@ -31,7 +34,8 @@ const journey = [
     date: "17 July 2026",
     title: "Still Choosing You",
     description: "Love is a decision made every day.",
-    icon: "/images/still.jpg",
+    icon: "🤍",
+    image: "/images/still.jpg",
     chapterId: 2,
   },
 
@@ -39,10 +43,11 @@ const journey = [
     id: 5,
     date: "21 July 2026",
     title: "Before Us",
-    description: "Every progress begins with a choice",
-    icon: "/images/before-us.jpg",
+    description: "Every beautiful story begins with a choice.",
+    icon: "✨",
+    image: "/images/before-us.jpg",
     chapterId: 3,
-  }
+  },
 ];
 
 export default journey;
