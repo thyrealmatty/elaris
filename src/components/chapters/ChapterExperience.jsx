@@ -97,6 +97,13 @@ export default function ChapterExperience({ chapter }) {
               <span>•</span>
               <span>{chapter.readingTime}</span>
             </div>
+            {chapter.cover && (
+  <img
+    src={chapter.cover}
+    alt={chapter.title}
+    className="mt-6 w-full aspect-[4/5] object-cover rounded-3xl shadow-lg"
+  />
+)}
 
             <hr className="my-5" />
 

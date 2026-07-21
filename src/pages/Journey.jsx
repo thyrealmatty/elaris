@@ -74,6 +74,15 @@ export default function Journey() {
                       <p className="mt-3 leading-7 text-gray-600">
                         {event.description}
                       </p>
+                      {event.image && (
+                       <div className="mt-5 overflow-hidden rounded-[24px] border border-[#efe3d3] bg-white p-2 shadow-lg">
+                          <img
+                            src={event.image}
+                            alt={event.title}
+                            className="h-56 w-full rounded-[18px] object-cover transition duration-500 group-hover:scale-105"
+                          />
+                        </div>
+                      )}
                       <div className="mt-6 flex items-center justify-between">
                         <span className="rounded-full bg-pink-100 px-4 py-2 text-sm font-medium text-pink-600">
                           💌 Opens Chapter
@@ -100,8 +109,11 @@ export default function Journey() {
                   More chapters are waiting...
                 </h2>
                 <p className="mt-3 leading-7 text-gray-600">
-                  Every day adds another page to our story.
-                  The best memories are still ahead of us.
+                  Our story has never been about reaching the end.
+                  It's about choosing each other,
+                  every single day.
+                  The best chapters
+                  haven't been written yet. 🤍
                 </p>
               </div>
             </div>

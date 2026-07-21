@@ -111,7 +111,7 @@ export default function Settings() {
         <div className="mt-8 rounded-[32px] border border-[#efe3d3] bg-[#fffaf3] p-8 shadow-lg">
 
           <p className="text-sm uppercase tracking-[5px] text-pink-400">
-            Creator
+            CREATOR
           </p>
 
           <h2 className="mt-3 text-2xl font-bold">
@@ -123,7 +123,7 @@ export default function Settings() {
           </p>
 
           <h3 className="mt-1 text-xl font-bold">
-            Matty
+            Matty Maverick - Nyingo Wakho
           </h3>
 
           <p className="mt-5 text-gray-600">
@@ -140,13 +140,21 @@ export default function Settings() {
 
         <div className="mt-12 text-center">
 
-          <h2 className="text-2xl font-bold">
-            Every chapter begins with a choice.
-          </h2>
+            <h2 className="text-2xl font-bold">
+              Every chapter begins with a choice.
+            </h2>
 
-          <p className="mt-4 text-sm text-gray-400">
-            © 2026 Elaris
-          </p>
+            <p className="mt-5 text-sm font-medium text-[#6b5b95]">
+              Elaris Version 1.0
+            </p>
+
+            <p className="mt-1 text-xs text-gray-400">
+              Released • 21 July 2026
+            </p>
+
+            <p className="mt-3 text-xs text-gray-400">
+              © 2026 Blxckglitters-Creation
+            </p>
 
         </div>
 
